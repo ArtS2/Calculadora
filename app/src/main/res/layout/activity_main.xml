@@ -34,38 +34,77 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Numb1"
-        app:layout_constraintVertical_bias="0.051" />
-
-    <Button
-        android:id="@+id/soma"
-        android:layout_width="147dp"
-        android:layout_height="100dp"
-        android:text="soma"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="364dp" />
-
-    <Button
-        android:id="@+id/subtr"
-        android:layout_width="147dp"
-        android:layout_height="100dp"
-        android:text="subtr"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="364dp" />
-
-    <Button
-        android:id="@+id/divi"
-        android:layout_width="147dp"
-        android:layout_height="100dp"
-        android:text="dividir"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="495dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/multi"
         android:layout_width="147dp"
         android:layout_height="100dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="24dp"
         android:text="multiplicar"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="495dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtr"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/soma"
+        android:layout_width="147dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="428dp"
+        android:text="soma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/subtr"
+        android:layout_width="147dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="24dp"
+        android:text="subtr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/divi"
+        android:layout_width="147dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="23dp"
+        android:text="dividir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soma"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Numb2"
+        app:layout_constraintVertical_bias="0.036" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
