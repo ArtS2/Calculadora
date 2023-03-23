@@ -25,4 +25,22 @@ public class MainActivity extends AppCompatActivity {
         int resultadoSoma = Numero1 + Numero2;
         res.setText("O resultado da soma é " + resultadoSoma);
     }
+    public void subtrair (View v) {
+        int Numero1 = Integer.parseInt(nb1.getText().toString());
+        int Numero2 = Integer.parseInt(nb2.getText().toString());
+        int resultadoSubtracao = Numero1 - Numero2;
+        res.setText("O resultado da subtração é " + resultadoSubtracao);
+    }
+    public void divisao (View v){
+        int Numero1 = Integer.parseInt(nb1.getText().toString());
+        int Numero2 = Integer.parseInt(nb2.getText().toString());
+        int resultadoDivisao = Numero1 / Numero2 * 2;
+        res.setText("O resultado da divisão é " + resultadoDivisao);
+    }
+    public void multiplicacao (View v){
+        int Numero1 = Integer.parseInt(nb1.getText().toString());
+        int Numero2 = Integer.parseInt(nb2.getText().toString());
+        int resultadoMultiplicacao = Numero1 * Numero2 /2;
+        res.setText("O resultado da multiplicacao é " + resultadoMultiplicacao);
+    }
 }

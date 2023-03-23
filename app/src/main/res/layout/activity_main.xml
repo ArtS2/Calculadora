@@ -14,7 +14,6 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
         android:ems="10"
-        android:hint="numero"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,10 +26,9 @@
         android:layout_width="233dp"
         android:layout_height="97dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="40dp"
         android:ems="10"
-        android:hint="numero"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,44 +40,40 @@
         android:id="@+id/subtr"
         android:layout_width="147dp"
         android:layout_height="100dp"
-        android:layout_marginTop="438dp"
         android:layout_marginEnd="24dp"
+        android:onClick="subtrair"
         android:text="subtr"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/soma"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/multi"
         android:layout_width="147dp"
         android:layout_height="100dp"
-        android:layout_marginTop="22dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="68dp"
+        android:onClick="multiplicacao"
         android:text="multiplicar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/divi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtr"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/soma"
         android:layout_width="147dp"
         android:layout_height="100dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="438dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:onClick="somar"
         android:text="soma"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -88,13 +82,14 @@
         android:layout_height="100dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="22dp"
+        android:onClick="divisao"
         android:text="dividir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/soma"
-        app:layout_constraintVertical_bias="0.00999999" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/resultado"
@@ -103,7 +98,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
-        android:textSize="34sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
